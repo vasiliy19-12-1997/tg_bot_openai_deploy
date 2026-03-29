@@ -1,0 +1,25 @@
+{
+  "name": "tg_bot_openai_deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& tsx watch src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node22 --format=cjs --outfile=deploy/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "grammy": "^1.41.1",
+    "openai": "^6.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "esbuild": "^0.27.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
